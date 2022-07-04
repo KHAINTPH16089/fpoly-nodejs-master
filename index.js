@@ -3,7 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 const app = express();
-import product from './src/routes/product';
+import product from './src/routes/product.js';
 // let router = module.require('./src/routes/product');
 
 // middleware
@@ -21,3 +21,5 @@ const PORT = 8000;
 app.listen(PORT, () => {
     console.log("Server is running port", PORT);
 })
+
+// module: --experimental-modules --es-module-specifier-resolution=node
