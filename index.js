@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/api', product)
 
 
-mongoose.connect("mongodb://localhost:27017/test2")
+mongoose.connect("mongodb+srv://khaintph16089:kazuo002@cluster0.fqkqf4g.mongodb.net/angular")
     .then(()=>{console.log("kết nỗi db thành công");})
     .catch(error => {console.log(error);})
 
