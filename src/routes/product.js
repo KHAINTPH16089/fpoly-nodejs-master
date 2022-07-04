@@ -5,7 +5,9 @@ import {checkAuth} from "../middleware/checkAuth.js";
 const router = Router();
 
 router.post("/product", checkAuth, creat);
-router.get("/products", checkAuth, list);
+router.get("/products", (req, res) =>{
+    res.json("alo alo")
+});
 router.get("/product/:id", checkAuth, get);
 router.delete("/product/:id", checkAuth, remove);
 router.put("/product/:id", checkAuth, update);

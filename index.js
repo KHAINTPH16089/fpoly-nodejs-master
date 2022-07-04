@@ -4,7 +4,6 @@ import morgan from 'morgan';
 import mongoose from 'mongoose';
 import { Router } from 'express';
 import product from './src/routes/product.js';
-import { list } from './src/controlles/product.js';
 const app = express();
 
 // middleware
@@ -12,8 +11,7 @@ app.use(cors());
 app.use(morgan('tiny'));
 app.use(express.json());
 
-const router = Router();
-app.use(router.get("/api/products", list))
+app.use('/api', product)
 
 
 mongoose.connect("mongodb://localhost:27017/test2")
