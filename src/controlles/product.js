@@ -1,5 +1,5 @@
 import express from "express";
-import Product from "../modules/product";
+import Product from "../modules/product.js";
 
 export const creat = async (req, res) => {
     try {
