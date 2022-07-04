@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
-// import product from './src/routes/product.js';
+import product from './src/routes/product.js';
 const app = express();
 
 
