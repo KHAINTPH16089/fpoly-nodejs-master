@@ -13,8 +13,8 @@ app.use(morgan('tiny'));
 app.use(express.json());
 
 const router = Router();
+app.use(router.get("/api/products", list))
 
-router.get("/api/products", list)
 
 mongoose.connect("mongodb://localhost:27017/test2")
     .then(()=>{console.log("kết nỗi db thành công");})
