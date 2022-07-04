@@ -15,7 +15,7 @@ app.use(morgan('tiny'));
 app.use(express.json());
 
 app.use("/api", (req, res) =>{
-    res.json("alo alo")
+    app.use("api", product)
 });
 
 mongoose.connect("mongodb://localhost:27017/test2")
