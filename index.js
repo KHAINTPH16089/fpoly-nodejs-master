@@ -2,8 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
-import product from './src/routes/product'
 const app = express();
+import product from './src/routes/product';
+// let router = module.require('./src/routes/product');
 
 // middleware
 app.use(cors());
